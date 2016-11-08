@@ -1,0 +1,42 @@
+{
+  "name": "sremote",
+  "version": "0.0.0",
+  "description": "Node.JS module to control newer models of Samsung Smart TVs (2016 and up)",
+  "main": "build/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "mkdir -p ./build && babel ./lib --out-dir ./build",
+    "clean": "rm -r ./build",
+    "prepublish": "npm run compile",
+    "watch": "npm run compile -- --watch"
+  },
+  "keywords": [
+    "samsung",
+    "remote",
+    "control",
+    "TV",
+    "smart",
+    "smarttv",
+    "iot"
+  ],
+  "author": "Christian Bromann <mail@christian-bromann.com>",
+  "license": "MIT",
+  "dependencies": {
+    "node-ssdp": "^2.9.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.2",
+    "babel-eslint": "^7.1.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "eslint": "^3.9.1",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-chai-expect": "^1.1.1",
+    "eslint-plugin-mocha": "^4.7.0",
+    "eslint-plugin-promise": "^3.3.1",
+    "eslint-plugin-standard": "^2.0.1",
+    "watch": "^1.0.1"
+  }
+}
