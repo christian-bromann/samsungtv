@@ -1,5 +1,5 @@
 {
-  "name": "sremote",
+  "name": "samsungtv",
   "version": "0.0.0",
   "description": "Node.JS module to control newer models of Samsung Smart TVs (2016 and up)",
   "main": "build/",
