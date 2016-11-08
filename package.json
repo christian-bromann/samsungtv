@@ -4,7 +4,7 @@
   "description": "Node.JS module to control newer models of Samsung Smart TVs (2016 and up)",
   "main": "build/",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "babel-node test/test.js",
     "compile": "mkdir -p ./build && babel ./lib --out-dir ./build",
     "clean": "rm -r ./build",
     "prepublish": "npm run compile",
@@ -22,13 +22,22 @@
   "author": "Christian Bromann <mail@christian-bromann.com>",
   "license": "MIT",
   "dependencies": {
-    "node-ssdp": "^2.9.0"
+    "appium-logger": "^2.1.0",
+    "babel-runtime": "^6.18.0",
+    "node-ssdp": "^2.9.0",
+    "request": "^2.78.0",
+    "request-promise": "^4.1.1",
+    "wake_on_lan": "0.0.4",
+    "ws": "^1.1.1"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-core": "^6.18.2",
     "babel-eslint": "^7.1.0",
     "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-class-properties": "^6.18.0",
+    "babel-plugin-transform-regenerator": "^6.16.1",
+    "babel-plugin-transform-runtime": "^6.15.0",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-stage-0": "^6.16.0",
     "eslint": "^3.9.1",

@@ -2,6 +2,9 @@
     "presets": ["es2015", "stage-0"],
     "plugins": [
         "syntax-async-functions",
-        "add-module-exports"
+        "add-module-exports",
+        "transform-class-properties",
+        "transform-runtime",
+        "transform-regenerator"
     ]
 }
