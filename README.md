@@ -42,6 +42,12 @@ async function main () {
     const TV = TVs[0]
     // specify token
     // TV.token = 'XXXXXX'
+    const devInfo = await TV.getDeviceInfo();
+    const macaddress = devInfo.device.wifiMac;
+    // turn on tv
+    await TV.wol(macaddress);
+
+    
     await TV.connect()
     console.log('this is the token to save somewere', TV.token)
 
