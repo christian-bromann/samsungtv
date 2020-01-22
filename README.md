@@ -40,7 +40,10 @@ async function main () {
 
     console.log(`There are ${TVs.length} Samsung Smart TVs connected to this network`)
     const TV = TVs[0]
+    // specify token
+    // TV.token = 'XXXXXX'
     await TV.connect()
+    console.log('this is the token to save somewere', TV.token)
 
     // ...
 
@@ -51,7 +54,7 @@ main().catch(console.log)
 ```
 
 ## Changes in 2018+ models
-the connection is dove via ssl and require confirmation in the tv, after confirmation is done a toke in saved that can be used in next connections.
+the connection is dove via ssl and require confirmation in the tv, after confirmation is done a token in saved that can be used in following connections.
 
 ## Development
 
