@@ -54,7 +54,7 @@ main().catch(console.log)
 ```
 
 ## Changes in 2018+ models
-the connection is dove via ssl and require confirmation in the tv, after confirmation is done a token in saved that can be used in following connections.
+the connection is dove via ssl and require confirmation in the tv, after confirmation is done a token in saved that can be used in further connections.
 
 ## Development
 
