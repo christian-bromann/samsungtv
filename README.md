@@ -50,6 +50,9 @@ async function main () {
 main().catch(console.log)
 ```
 
+## Changes in 2018+ models
+the connection is dove via ssl and require confirmation in the tv, after confirmation is done a toke in saved that can be used in next connections.
+
 ## Development
 
 Compile files:
