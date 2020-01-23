@@ -47,7 +47,6 @@ async function main () {
     // save it to further turn on tv
     // await TV.wol(macaddress);
 
-    
     await TV.connect()
     console.log('this is the token to save somewere', TV.token)
 
