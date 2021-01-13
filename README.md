@@ -40,7 +40,15 @@ async function main () {
 
     console.log(`There are ${TVs.length} Samsung Smart TVs connected to this network`)
     const TV = TVs[0]
+    // specify token
+    // TV.token = 'XXXXXX'
+    const devInfo = await TV.getDeviceInfo();
+    const macaddress = devInfo.device.wifiMac;
+    // save it to further turn on tv
+    // await TV.wol(macaddress);
+
     await TV.connect()
+    console.log('this is the token to save somewere', TV.token)
 
     // ...
 
@@ -49,6 +57,9 @@ async function main () {
 
 main().catch(console.log)
 ```
+
+## Changes in 2018+ models
+The connection is done via SSL and requires confirmation via the tv, after confirmation is done a token in saved that can be used in further connections.
 
 ## Development
 
